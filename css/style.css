@@ -1,0 +1,34 @@
+.grades {
+    border: 1px solid black;
+    border-bottom: 0;
+    border-radius: 5px;
+    width: 200px;
+    background-color: white;
+}
+
+.grade-tabs:last-child {
+    border-bottom: 1px solid black;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+#grades {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: 0 50px;
+}
+#grades #left-content {
+    margin-right: 50px;
+    /*border-right: 1px solid black;*/
+}
+#grades .right-content {
+    flex-grow: 1;
+    margin-top: 0;
+}
+
+.grade-tabs button:focus {
+    border-right: none;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+}
