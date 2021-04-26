@@ -8,6 +8,7 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
 
     <title>Blackboard | Southern Connecticut State University</title>
 </head>
@@ -38,7 +39,12 @@
 <section id="menu">
     <ul class="nav nav-tabs align-self-end" id="myTab" role="tablist">
         <li class="nav-item" role="presentation">
-            <button class="nav-link active" id="course1-tab" data-bs-toggle="tab" data-bs-target="#course1" type="button" role="tab" aria-controls="course1-tab" aria-selected="true">Course 1</button>
+            <button class="nav-link active" id="course1-tab" data-bs-toggle="tab" data-bs-target="#course1" type="button" role="tab" aria-controls="course1-tab" aria-selected="true">
+                Course 1
+                <a class='notifications' id="course1Announcement" href="#" target="myFrame"><i class="bi bi-megaphone"></i></a>
+                <a class='notifications' id='course1Grade' href="#"><i class="bi bi-clipboard-check"></i></a>
+                <a class='notifications' id='course1NewContent'><i class="bi bi-file-earmark-arrow-up"></i></a>
+            </button>
         </li>
         <li class="nav-item" role="presentation">
             <button class="nav-link" id="course2-tab" data-bs-toggle="tab" data-bs-target="#course2" type="button" role="tab" aria-controls="course2-tab" aria-selected="false">Course 2</button>
@@ -72,13 +78,13 @@
                 <div class="p-3 mb-2 bg-primary text-white"></div>
                  CSC-334-01-Spring-2021 <br>
                  <a href="pages/Syllabusc1.html" target="myFrame">Syllabus and General Information</a><br>
-                 <a href="pages/Announcementsc1.html" target="myFrame">Announcements </a>
+                 <a href="pages/Announcementsc1.html" target="myFrame" id="course1Announcements">Announcements </a>
                  <hr>
                 
                  <a href="pages/Calender.html" target="myFrame">Calender </a><br>
-                 <a href="pages/Gradesc1.html" target="myFrame"> My Grades </a> <br>
+                 <a href="pages/Gradesc1.html" target="myFrame" id="course1Grades"> My Grades </a> <br>
                     <hr>
-                    <a href="pages/Lecturesc1.html" target="myFrame">Lectures </a><br>
+                    <a href="pages/Lecturesc1.html" target="myFrame" id="course1Content">Lectures </a><br>
 
                   </div>
                   <div class="col-sm-9">
