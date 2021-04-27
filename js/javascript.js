@@ -34,77 +34,77 @@ newContentNotification.addEventListener("click", function(){
 });
 
 let grade2Notification = document.getElementById('course2Grade');
-gradeNotification.addEventListener("click", function(){
+grade2Notification.addEventListener("click", function(){
     let notification = document.getElementById('course2Grades');
     notification.click();
     grade2Notification.style.display = "none";
 });
 
 let announcement2Notification = document.getElementById('course2Announcement');
-announcementNotification.addEventListener("click", function(){
+announcement2Notification.addEventListener("click", function(){
     let notification = document.getElementById('course2Announcements');
     notification.click();
     announcement2Notification.style.display = "none";
 });
 
 let newContent2Notification = document.getElementById('course2NewContent');
-newContentNotification.addEventListener("click", function(){
+newContent2Notification.addEventListener("click", function(){
     let notification = document.getElementById('course2Content');
     notification.click();
     newContent2Notification.style.display = "none";
 });
 
 let grade3Notification = document.getElementById('course3Grade');
-gradeNotification.addEventListener("click", function(){
+grade3Notification.addEventListener("click", function(){
     let notification = document.getElementById('course3Grades');
     notification.click();
     gradeNotification.style.display = "none";
 });
 
 let announcement3Notification = document.getElementById('course3Announcement');
-announcementNotification.addEventListener("click", function(){
+announcement3Notification.addEventListener("click", function(){
     let notification = document.getElementById('course3Announcements');
     notification.click();
     announcement3Notification.style.display = "none";
 });
 
 let newContent3Notification = document.getElementById('course3NewContent');
-newContentNotification.addEventListener("click", function(){
+newContent3Notification.addEventListener("click", function(){
     let notification = document.getElementById('course3Content');
     notification.click();
     newContent3Notification.style.display = "none";
 });
 
 let grade4Notification = document.getElementById('course4Grade');
-gradeNotification.addEventListener("click", function(){
+grade4Notification.addEventListener("click", function(){
     let notification = document.getElementById('course4Grades');
     notification.click();
     grade4Notification.style.display = "none";
 });
 
 let announcement4Notification = document.getElementById('course4Announcement');
-announcementNotification.addEventListener("click", function(){
+announcement4Notification.addEventListener("click", function(){
     let notification = document.getElementById('course4Announcements');
     notification.click();
     announcement4Notification.style.display = "none";
 });
 
 let newContent4Notification = document.getElementById('course4NewContent');
-newContentNotification.addEventListener("click", function(){
+newContent4Notification.addEventListener("click", function(){
     let notification = document.getElementById('course4Content');
     notification.click();
     newContent4Notification.style.display = "none";
 });
 
 let grade5Notification = document.getElementById('course5Grade');
-gradeNotification.addEventListener("click", function(){
+grade5Notification.addEventListener("click", function(){
     let notification = document.getElementById('course5Grades');
     notification.click();
     grade5Notification.style.display = "none";
 });
 
 let announcement5Notification = document.getElementById('course5Announcement');
-announcementNotification.addEventListener("click", function(){
+announcement5Notification.addEventListener("click", function(){
     let notification = document.getElementById('course5Announcements');
     notification.click();
     announcement5Notification.style.display = "none";
@@ -132,4 +132,58 @@ course1Content.addEventListener('click', function (){
     newContentNotification.style.display = "none";
 });
 
+let course2Announcements = document.getElementById('course2Announcements');
+course2Announcements.addEventListener('click', function (){
+    announcement2Notification.style.display = "none";
+});
+
+let course2Grades = document.getElementById('course2Grades');
+course2Grades.addEventListener('click', function (){
+    grade2Notification.style.display = "none";
+});
+
+let course2Content = document.getElementById('course2Content');
+course2Content.addEventListener('click', function (){
+    newContent2Notification.style.display = "none";
+});
+
+let course3Announcements = document.getElementById('course3Announcements');
+course3Announcements.addEventListener('click', function (){
+    announcement3Notification.style.display = "none";
+});
+
+let course3Grades = document.getElementById('course3Grades');
+course3Grades.addEventListener('click', function (){
+    grade3Notification.style.display = "none";
+});
+
+let course3Content = document.getElementById('course3Content');
+course3Content.addEventListener('click', function (){
+    newContent3Notification.style.display = "none";
+});
+
+let course4Announcements = document.getElementById('course4Announcements');
+course4Announcements.addEventListener('click', function (){
+    announcement4Notification.style.display = "none";
+});
+
+let course4Grades = document.getElementById('course4Grades');
+course4Grades.addEventListener('click', function (){
+    grade4Notification.style.display = "none";
+});
+
+let course4Content = document.getElementById('course4Content');
+course4Content.addEventListener('click', function (){
+    newContent4Notification.style.display = "none";
+});
+
+let course5Announcements = document.getElementById('course5Announcements');
+course5Announcements.addEventListener('click', function (){
+    announcement5Notification.style.display = "none";
+});
+
+let course5Grades = document.getElementById('course5Grades');
+course5Grades.addEventListener('click', function (){
+    grade5Notification.style.display = "none";
+});
 
