@@ -187,3 +187,85 @@ course5Grades.addEventListener('click', function (){
     grade5Notification.style.display = "none";
 });
 
+let course1tab = document.getElementById('course1check');
+let course2tab = document.getElementById('course2check');
+let course3tab = document.getElementById('course3check');
+let course4tab = document.getElementById('course4check');
+let course5tab = document.getElementById('course5check');
+let courseButton = document.getElementById('coursesSave');
+courseButton.addEventListener('click', function () {
+    let course1 = document.getElementById('course1-tab');
+    let course2 = document.getElementById('course2-tab');
+    let course3 = document.getElementById('course3-tab');
+    let course4 = document.getElementById('course4-tab');
+    let course5 = document.getElementById('course5-tab');
+    if (course1tab.checked === false) {
+        course1.style.display = 'none';
+    } else {
+        course1.style.display = "inline-block"
+    }
+    if (course2tab.checked === false) {
+        course2.style.display = 'none';
+    } else {
+        course2.style.display = "inline-block"
+    }
+    if (course3tab.checked === false) {
+        course3.style.display = 'none';
+    } else {
+        course3.style.display = "inline-block"
+    }
+    if (course4tab.checked === false) {
+        course4.style.display = 'none';
+    } else {
+        course4.style.display = "inline-block"
+    }
+    if (course5tab.checked === false) {
+        course5.style.display = 'none';
+    } else {
+        course5.style.display = "inline-block"
+    }
+});
+
+let newAnnouncements = document.getElementById('announcementCheck');
+let newGrades = document.getElementById('gradeCheck');
+let newContent = document.getElementById('newContentCheck');
+let notificationButton = document.getElementById('notificationSave');
+notificationButton.addEventListener('click', function () {
+    if (newAnnouncements.checked === false) {
+        announcementNotification.style.display = 'none';
+        announcement2Notification.style.display = "none";
+        announcement3Notification.style.display = "none";
+        announcement4Notification.style.display = "none";
+        announcement5Notification.style.display = "none";
+    } else {
+        announcementNotification.style.display = "inline-block";
+        announcement2Notification.style.display = "inline-block";
+        announcement3Notification.style.display = "inline-block";
+        announcement4Notification.style.display = "inline-block";
+        announcement5Notification.style.display = "inline-block";
+    }
+    if (newGrades.checked === false) {
+        gradeNotification.style.display = 'none';
+        grade2Notification.style.display = 'none';
+        grade3Notification.style.display = 'none';
+        grade4Notification.style.display = 'none';
+        grade5Notification.style.display = 'none';
+    } else {
+        gradeNotification.style.display = "inline-block";
+        grade2Notification.style.display = "inline-block";
+        grade3Notification.style.display = "inline-block";
+        grade4Notification.style.display = "inline-block";
+        grade5Notification.style.display = "inline-block";
+    }
+    if (newContent.checked === false) {
+        newContentNotification.style.display = 'none';
+        newContent2Notification.style.display = 'none';
+        newContent3Notification.style.display = 'none';
+        newContent4Notification.style.display = 'none';
+    } else {
+        newContentNotification.style.display = "inline-block";
+        newContent2Notification.style.display = "inline-block";
+        newContent3Notification.style.display = "inline-block";
+        newContent4Notification.style.display = "inline-block";
+    }
+});
