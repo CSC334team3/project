@@ -72,10 +72,11 @@ header {
 
 #calendar {
     margin-top: 0;
+    padding-top: 0;
 }
 
 #calendar_ {
-    width: 100%;
+    width: 50%;
 }
 
 #calendar_ a {
