@@ -1,3 +1,8 @@
+section {
+  margin: 0 10px;
+}
+
+
 .grades {
     border: 1px solid black;
     border-bottom: 0;
@@ -32,7 +37,126 @@
     border-bottom-right-radius: 0;
     border-top-right-radius: 0;
 }
+#myTab .courses{
+    background-color: #476b6b;
+    border: 1px solid silver;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+
+#myTab .utility {
+    background-color: darkslategray;
+    border: 1px solid silver;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.headings {
+    background-color: darkblue;
+}
+
 .a:link {color: #336699;}
 .a:visited {color: #666699;}
 .a:hover {color: #000000;}
 .a:active {color: #336699;}
+
+
+body {
+    font-family: Tahoma;
+}
+
+header {
+    text-align: center;
+}
+
+#calendar {
+    margin-top: 0;
+}
+
+#calendar_ {
+    width: 100%;
+}
+
+#calendar_ a {
+    color: #8e352e;
+    text-decoration: none;
+}
+
+#calendar_ ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+#calendar_ li {
+    display: block;
+    float: left;
+    width:14.342%;
+    padding: 5px;
+    box-sizing:border-box;
+    border: 1px solid #ccc;
+    margin-right: -1px;
+    margin-bottom: -1px;
+}
+
+#calendar_ ul.weekdays {
+    height: 40px;
+    background: #8e352e;
+}
+
+#calendar_ ul.weekdays li {
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 20px;
+    border: none !important;
+    padding: 10px 6px;
+    color: #fff;
+    font-size: 13px;
+}
+
+#calendar_ .days li {
+    height: 180px;
+}
+
+#calendar_ .days li:hover {
+    background: #d3d3d3;
+}
+
+#calendar_ .date {
+    text-align: center;
+    margin-bottom: 5px;
+    padding: 4px;
+    background: #333;
+    color: #fff;
+    width: 20px;
+    border-radius: 50%;
+    float: right;
+}
+
+#calendar_ .event {
+    clear: both;
+    display: block;
+    font-size: 13px;
+    border-radius: 4px;
+    padding: 5px;
+    margin-top: 40px;
+    margin-bottom: 5px;
+    line-height: 14px;
+    background: #e4f2f2;
+    border: 1px solid #b5dbdc;
+    color: #009aaf;
+    text-decoration: none;
+}
+
+#calendar_ .event-desc {
+    color: #666;
+    margin: 3px 0 7px 0;
+    text-decoration: none;
+}
+
+#calendar_ .other-month {
+    background: #f5f5f5;
+    color: #666;
+}

@@ -7,7 +7,6 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="./css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -15,66 +14,83 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+
 
 
     <title>Blackboard | Southern Connecticut State University</title>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#">Blackboard | Southern Connecticut State University</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDarkDropdown">
-            <ul class="navbar-nav">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Student Name <i class="fa fa-bell " style="color: #0099CC;"></i></a>
-                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                </li>
-            </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark headings">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Blackboard | Southern Connecticut State University</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDarkDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#" id="navbarDarkDropdownMenuLink" aria-expanded="false">Student Name</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
-</nav>
-<br>
-<br>
+    </nav>
+    <br>
+    <br>
 
 <section id="menu">
-    <ul class="nav nav-tabs align-self-end" id="myTab" role="tablist">
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
         <li class="nav-item" role="presentation">
-            <button class="nav-link active" id="course1-tab" data-bs-toggle="tab" data-bs-target="#course1" type="button" role="tab" aria-controls="course1-tab" aria-selected="true">
-                Course 1
+            <button class="nav-link active courses" id="course1-tab" data-bs-toggle="tab" data-bs-target="#course1" type="button" role="tab" aria-controls="course1-tab" aria-selected="true">
+                Human Computer Interaction
                 <a class='notifications' id="course1Announcement" href="#" target="myFrame"><i class="bi bi-megaphone"></i></a>
                 <a class='notifications' id='course1Grade' href="#"><i class="bi bi-clipboard-check"></i></a>
                 <a class='notifications' id='course1NewContent'><i class="bi bi-file-earmark-arrow-up"></i></a>
             </button>
         </li>
-        <li class="nav-item" role="presentation">
-            <button class="nav-link" id="course2-tab" data-bs-toggle="tab" data-bs-target="#course2" type="button" role="tab" aria-controls="course2-tab" aria-selected="false">Course 2</button>
+        <li class="nav-item courses" role="presentation">
+            <button class="nav-link" id="course2-tab" data-bs-toggle="tab" data-bs-target="#course2" type="button" role="tab" aria-controls="course2-tab" aria-selected="false">
+                Physics for Scientists and Engineers II
+                <a class='notifications' id="course2Announcement" href="#" target="myFrame"><i class="bi bi-megaphone"></i></a>
+                <a class='notifications' id='course2Grade' href="#"><i class="bi bi-clipboard-check"></i></a>
+                <a class='notifications' id='course2NewContent'><i class="bi bi-file-earmark-arrow-up"></i></a>
+            </button>
         </li>
-        <li class="nav-item" role="presentation">
-            <button class="nav-link" id="course3-tab" data-bs-toggle="tab" data-bs-target="#course3" type="button" role="tab" aria-controls="course3-tab" aria-selected="false">Course 3</button>
+        <li class="nav-item courses" role="presentation">
+            <button class="nav-link" id="course3-tab" data-bs-toggle="tab" data-bs-target="#course3" type="button" role="tab" aria-controls="course3-tab" aria-selected="false">
+                Computer Organization
+                <a class='notifications' id="course3Announcement" href="#" target="myFrame"><i class="bi bi-megaphone"></i></a>
+                <a class='notifications' id='course3Grade' href="#"><i class="bi bi-clipboard-check"></i></a>
+                <a class='notifications' id='course3NewContent'><i class="bi bi-file-earmark-arrow-up"></i></a>
+            </button>
         </li>
-        <li class="nav-item" role="presentation">
-            <button class="nav-link" id="course4-tab" data-bs-toggle="tab" data-bs-target="#course4" type="button" role="tab" aria-controls="course4-tab" aria-selected="false">Course 4</button>
+        <li class="nav-item courses" role="presentation">
+            <button class="nav-link" id="course4-tab" data-bs-toggle="tab" data-bs-target="#course4" type="button" role="tab" aria-controls="course4-tab" aria-selected="false">
+                Computer Ethics
+                <a class='notifications' id="course4Announcement" href="#" target="myFrame"><i class="bi bi-megaphone"></i></a>
+                <a class='notifications' id='course4Grade' href="#"><i class="bi bi-clipboard-check"></i></a>
+                <a class='notifications' id='course4NewContent'><i class="bi bi-file-earmark-arrow-up"></i></a>
+            </button>
         </li>
-        <li class="nav-item" role="presentation">
-            <button class="nav-link" id="course5-tab" data-bs-toggle="tab" data-bs-target="#course5" type="button" role="tab" aria-controls="course5-tab" aria-selected="false">Course 5</button>
+        <li class="nav-item courses" role="presentation">
+            <button class="nav-link" id="course5-tab" data-bs-toggle="tab" data-bs-target="#course5" type="button" role="tab" aria-controls="course5-tab" aria-selected="false">
+                Computer Systems
+                <a class='notifications' id="course5Announcement" href="#" target="myFrame"><i class="bi bi-megaphone"></i></a>
+                <a class='notifications' id='course5Grade' href="#"><i class="bi bi-clipboard-check"></i></a>
+            </button>
         </li>
-        <li class="nav-item" role="presentation">
+        <li class="nav-item utility" role="presentation">
             <button class="nav-link" id="grade-tab" data-bs-toggle="tab" data-bs-target="#grades" type="button" role="tab" aria-controls="grade-tab" aria-selected="false">Grades</button>
         </li>
-        <li class="nav-item" role="presentation">
+        <li class="nav-item utility" role="presentation">
             <button class="nav-link" id="calendar-tab" data-bs-toggle="tab" data-bs-target="#calendar" type="button" role="tab" aria-controls="calendar-tab" aria-selected="false">Calender</button>
         </li>
-        <li class="nav-item" role="presentation">
+        <li class="nav-item utility" role="presentation">
             <button class="nav-link" id="setting-tab" data-bs-toggle="tab" data-bs-target="#settings" type="button" role="tab" aria-controls="settings-tab" aria-selected="false">Settings</button>
         </li>
     </ul>
+    <br>
     <div class="tab-content" id="myTabContent">
         <div class="tab-pane fade show active" id="course1" role="tabpanel" aria-labelledby="course1-tab">
         
@@ -82,7 +98,7 @@
              <div class="container-fluid">
                 <div class="row">
                   <div class="col-sm-2">
-                <div class="p-3 mb-2 bg-primary text-white"></div>
+                <div class="p-3 mb-2 text-white headings"></div>
                  CSC-334-01-Spring-2021 <br>
                  <a href="pages/Syllabusc1.html" target="myFrame">Syllabus and General Information</a><br>
                  <a href="pages/Announcementsc1.html" target="myFrame" id="course1Announcements">Announcements </a>
@@ -114,7 +130,7 @@
             <div class="container-fluid">
                 <div class="row">
                   <div class="col-sm-2 ">
-                <div class="p-3 mb-2 bg-primary text-white"></div>
+                <div class="p-3 mb-2 headings text-white"></div>
                 
                  PHY-231-01-Spring-2021 <br>
                  <a href="pages/Syllabusc2.html" target="myFrame">Syllabus and General Information</a><br>
@@ -145,7 +161,7 @@
             <div class="container-fluid">
                 <div class="row">
                   <div class="col-sm-2 ">
-                <div class="p-3 mb-2 bg-primary text-white"></div>
+                <div class="p-3 mb-2 headings text-white"></div>
                 
                  CSC-305-S70-Spring-2021 <br>
                  <a href="pages/Syllabusc3.html" target="myFrame">Syllabus and General Information</a><br>
@@ -176,7 +192,7 @@
             <div class="container-fluid">
                 <div class="row">
                   <div class="col-sm-2 ">
-                <div class="p-3 mb-2 bg-primary text-white"></div>
+                <div class="p-3 mb-2 headings text-white"></div>
                 
                  CSC-324-01W-Spring-2021 <br>
                  <a href="pages/Syllabusc4.html" target="myFrame">Syllabus and General Information</a><br>
@@ -186,7 +202,7 @@
                  <a href="pages/Calender.html" target="myFrame">Calender </a><br>
                  <a href="pages/Gradesc4.html" target="myFrame" id="course4Grades"> My Grades </a> <br>
                     <hr>
-                    <a href="pages/Lecturesc4.html" target="myFrame">Lectures </a><br>
+                    <a href="pages/Lecturesc4.html" target="myFrame" id="course4Content">Lectures </a><br>
                 
                   </div>
                   <div class="col-sm-9">
@@ -207,7 +223,7 @@
              <div class="container-fluid">
                 <div class="row">
                   <div class="col-sm-2">
-                <div class="p-3 mb-2 bg-primary text-white"></div>
+                <div class="p-3 mb-2 headings text-white"></div>
                  CSC-207-02-Spring_2021 <br>
                  <a href="pages/Syllabusc5.html" target="myFrame">Syllabus and General Information</a><br>
                  <a href="pages/Announcementsc5.html" target="myFrame" id="course5Announcements">Announcements </a>
@@ -229,7 +245,6 @@
                 </div>
               </div>
         </div>
-        <br>
         <div class="tab-pane fade" id="grades" role="tabpanel" aria-labelledby="grade-tab">
             <div id="left-content">
                 <ul class="nav flex-column grade-tabs">
@@ -467,12 +482,233 @@
                         </table>
                     </div>
                 </div>
-                <br>
             </div>
-
-
         </div>
-        <div class="tab-pane fade" id="calendar" role="tabpanel" aria-labelledby="calendar-tab">...</div>
+        <div class="tab-pane fade" id="calendar" role="tabpanel" aria-labelledby="calendar-tab">
+            <div id="calendar-wrap">
+                <header>
+                    <h1>December 2017</h1>
+                </header>
+                <div id="calendar_">
+                    <ul class="weekdays">
+                        <li>Sunday</li>
+                        <li>Monday</li>
+                        <li>Tuesday</li>
+                        <li>Wednesday</li>
+                        <li>Thursday</li>
+                        <li>Friday</li>
+                        <li>Saturday</li>
+                    </ul>
+
+                    <!-- Days from previous month -->
+
+                    <ul class="days">
+                        <li class="day other-month">
+                            <div class="date">27</div>
+                        </li>
+                        <li class="day other-month">
+                            <div class="date">28</div>
+                            <div class="event">
+                                <div class="event-desc">
+                                    HTML 5 lecture with Brad Traversy from Eduonix
+                                </div>
+                                <div class="event-time">
+                                    1:00pm to 3:00pm
+                                </div>
+                            </div>
+                        </li>
+                        <li class="day other-month">
+                            <div class="date">29</div>
+                        </li>
+                        <li class="day other-month">
+                            <div class="date">30</div>
+                        </li>
+                        <li class="day other-month">
+                            <div class="date">31</div>
+                        </li>
+
+                        <!-- Days in current month -->
+
+                        <li class="day">
+                            <div class="date">1</div>
+                        </li>
+                        <li class="day">
+                            <div class="date">2</div>
+                            <div class="event">
+                                <div class="event-desc">
+                                    Career development @ Community College room #402
+                                </div>
+                                <div class="event-time">
+                                    2:00pm to 5:00pm
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <!-- Row #2 -->
+
+                    <ul class="days">
+                        <li class="day">
+                            <div class="date">3</div>
+                        </li>
+                        <li class="day">
+                            <div class="date">4</div>
+                        </li>
+                        <li class="day">
+                            <div class="date">5</div>
+                        </li>
+                        <li class="day">
+                            <div class="date">6</div>
+                        </li>
+                        <li class="day">
+                            <div class="date">7</div>
+                            <div class="event">
+                                <div class="event-desc">
+                                    Group Project meetup
+                                </div>
+                                <div class="event-time">
+                                    6:00pm to 8:30pm
+                                </div>
+                            </div>
+                        </li>
+                        <li class="day">
+                            <div class="date">8</div>
+                        </li>
+                        <li class="day">
+                            <div class="date">9</div>
+                        </li>
+                    </ul>
+
+                    <!-- Row #3 -->
+
+                    <ul class="days">
+                        <li class="day">
+                            <div class="date">10</div>
+                        </li>
+                        <li class="day">
+                            <div class="date">11</div>
+                        </li>
+                        <li class="day">
+                            <div class="date">12</div>
+                        </li>
+                        <li class="day">
+                            <div class="date">13</div>
+                        </li>
+                        <li class="day">
+                            <div class="date">14</div><div class="event">
+                            <div class="event-desc">
+                                Board Meeting
+                            </div>
+                            <div class="event-time">
+                                1:00pm to 3:00pm
+                            </div>
+                        </div>
+                        </li>
+                        <li class="day">
+                            <div class="date">15</div>
+                        </li>
+                        <li class="day">
+                            <div class="date">16</div>
+                        </li>
+                    </ul>
+
+                    <!-- Row #4 -->
+
+                    <ul class="days">
+                        <li class="day">
+                            <div class="date">17</div>
+                        </li>
+                        <li class="day">
+                            <div class="date">18</div>
+                        </li>
+                        <li class="day">
+                            <div class="date">19</div>
+                        </li>
+                        <li class="day">
+                            <div class="date">20</div>
+                        </li>
+                        <li class="day">
+                            <div class="date">21</div>
+                        </li>
+                        <li class="day">
+                            <div class="date">22</div>
+                            <div class="event">
+                                <div class="event-desc">
+                                    Conference call
+                                </div>
+                                <div class="event-time">
+                                    9:00am to 12:00pm
+                                </div>
+                            </div>
+                        </li>
+                        <li class="day">
+                            <div class="date">23</div>
+                        </li>
+                    </ul>
+
+                    <!-- Row #5 -->
+
+                    <ul class="days">
+                        <li class="day">
+                            <div class="date">24</div>
+                        </li>
+                        <li class="day">
+                            <div class="date">25</div>
+                            <div class="event">
+                                <div class="event-desc">
+                                    Conference Call
+                                </div>
+                                <div class="event-time">
+                                    1:00pm to 3:00pm
+                                </div>
+                            </div>
+                        </li>
+                        <li class="day">
+                            <div class="date">26</div>
+                        </li>
+                        <li class="day">
+                            <div class="date">27</div>
+                        </li>
+                        <li class="day">
+                            <div class="date">28</div>
+                        </li>
+                        <li class="day">
+                            <div class="date">29</div>
+                        </li>
+                        <li class="day">
+                            <div class="date">30</div>
+                        </li>
+                    </ul>
+
+                    <!-- Row #6 -->
+
+                    <ul class="days">
+                        <li class="day">
+                            <div class="date">31</div>
+                        </li>
+                        <li class="day other-month">
+                            <div class="date">1</div> <!-- Next Month -->
+                        </li>
+                        <li class="day other-month">
+                            <div class="date">2</div>
+                        </li>
+                        <li class="day other-month">
+                            <div class="date">3</div>
+                        </li>
+                        <li class="day other-month">
+                            <div class="date">4</div>
+                        </li>
+                        <li class="day other-month">
+                            <div class="date">5</div>
+                        </li>
+                        <li class="day other-month">
+                            <div class="date">6</div>
+                        </li>
+                    </ul>
+
+                </div><!-- /. calendar -->
+            </div><!-- /. wrap -->
+        </div>
         <div class="tab-pane fade" id="settings" role="tabpanel" aria-labelledby="settings-tab">
 		<div class="d-flex align-items-start">
   			<div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
@@ -737,5 +973,6 @@
 <!--    Required Bootstrap Javascript -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 <script src="./js/javascript.js" type="text/javascript"></script>
+
 </body>
 </html>
