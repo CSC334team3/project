@@ -39,7 +39,7 @@ section {
     border-top-right-radius: 0;
 }
 #myTab .courses{
-    background-color: #476b6b;
+    background-color: #a1bff5;
     border: 1px solid silver;
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
@@ -47,7 +47,7 @@ section {
 
 
 #myTab .utility {
-    background-color: darkslategray;
+    background-color: rgb(134, 184, 248);
     border: 1px solid silver;
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
