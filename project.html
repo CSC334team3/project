@@ -33,7 +33,7 @@
                         <a class="nav-link" href="#" id="navbarDarkDropdownMenuLink" aria-expanded="false">Student Name</a>
                     </li>
 		   <li class="nav-item ">
-			<button type="button" class="btn btn-light">
+			<button type="button" class="btn btn-light" onclick="location.href='https://myapplications.microsoft.com/'">
 				<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black" class="bi bi-box-arrow-in-right" viewBox="0 0 16 16">
   					<path fill-rule="evenodd" d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0v-2z"/>
   					<path fill-rule="evenodd" d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
@@ -47,46 +47,52 @@
     </nav>
     <br>
     <br>
+<div id="iconKey">
+    <p class="keys" id="notificationKey">Key:</p>
+    <p class="keys"><i class="bi bi-megaphone"></i> New Announcements</p>
+    <p class="keys"><i class="bi bi-clipboard-check"></i> New Grades</p>
+    <p class="keys"><i class="bi bi-file-earmark-arrow-up"></i> New Content Uploaded</p>
 
+</div>
 <section id="menu">
     <ul class="nav nav-tabs" id="myTab" role="tablist">
         <li class="nav-item" role="presentation">
             <button class="nav-link active courses" id="course1-tab" data-bs-toggle="tab" data-bs-target="#course1" type="button" role="tab" aria-controls="course1-tab" aria-selected="true">
                 Human Computer Interaction
-                <a class='notifications' id="course1Announcement" href="#" target="myFrame"><i class="bi bi-megaphone"></i></a>
-                <a class='notifications' id='course1Grade' href="#"><i class="bi bi-clipboard-check"></i></a>
-                <a class='notifications' id='course1NewContent'><i class="bi bi-file-earmark-arrow-up"></i></a>
+                <a class='notifications' id="course1Announcement" href="#" target="myFrame" title="click to view new announcements"><i class="bi bi-megaphone"></i></a>
+                <a class='notifications' id='course1Grade' href="#" title="click to view new grades"><i class="bi bi-clipboard-check"></i></a>
+                <a class='notifications' id='course1NewContent' title="click to view new uploaded content"><i class="bi bi-file-earmark-arrow-up"></i></a>
             </button>
         </li>
         <li class="nav-item courses" role="presentation">
             <button class="nav-link" id="course2-tab" data-bs-toggle="tab" data-bs-target="#course2" type="button" role="tab" aria-controls="course2-tab" aria-selected="false">
                 Physics for Scientists and Engineers II
-                <a class='notifications' id="course2Announcement" href="#" target="myFrame"><i class="bi bi-megaphone"></i></a>
-                <a class='notifications' id='course2Grade' href="#"><i class="bi bi-clipboard-check"></i></a>
-                <a class='notifications' id='course2NewContent'><i class="bi bi-file-earmark-arrow-up"></i></a>
+                <a class='notifications' id="course2Announcement" href="#" target="myFrame" title="click to view new announcements"><i class="bi bi-megaphone"></i></a>
+                <a class='notifications' id='course2Grade' href="#" title="click to view new grades"><i class="bi bi-clipboard-check"></i></a>
+                <a class='notifications' id='course2NewContent' title="click to view new uploaded content"><i class="bi bi-file-earmark-arrow-up"></i></a>
             </button>
         </li>
         <li class="nav-item courses" role="presentation">
             <button class="nav-link" id="course3-tab" data-bs-toggle="tab" data-bs-target="#course3" type="button" role="tab" aria-controls="course3-tab" aria-selected="false">
                 Computer Organization
-                <a class='notifications' id="course3Announcement" href="#" target="myFrame"><i class="bi bi-megaphone"></i></a>
-                <a class='notifications' id='course3Grade' href="#"><i class="bi bi-clipboard-check"></i></a>
-                <a class='notifications' id='course3NewContent'><i class="bi bi-file-earmark-arrow-up"></i></a>
+                <a class='notifications' id="course3Announcement" href="#" target="myFrame" title="click to view new announcements"><i class="bi bi-megaphone"></i></a>
+                <a class='notifications' id='course3Grade' href="#"><i class="bi bi-clipboard-check" title="click to view new grades"></i></a>
+                <a class='notifications' id='course3NewContent' title="click to view new uploaded content"><i class="bi bi-file-earmark-arrow-up"></i></a>
             </button>
         </li>
         <li class="nav-item courses" role="presentation">
             <button class="nav-link" id="course4-tab" data-bs-toggle="tab" data-bs-target="#course4" type="button" role="tab" aria-controls="course4-tab" aria-selected="false">
                 Computer Ethics
-                <a class='notifications' id="course4Announcement" href="#" target="myFrame"><i class="bi bi-megaphone"></i></a>
-                <a class='notifications' id='course4Grade' href="#"><i class="bi bi-clipboard-check"></i></a>
-                <a class='notifications' id='course4NewContent'><i class="bi bi-file-earmark-arrow-up"></i></a>
+                <a class='notifications' id="course4Announcement" href="#" target="myFrame" title="click to view new announcements"><i class="bi bi-megaphone"></i></a>
+                <a class='notifications' id='course4Grade' href="#" title="click to view new grades"><i class="bi bi-clipboard-check"></i></a>
+                <a class='notifications' id='course4NewContent' title="click to view new uploaded content"><i class="bi bi-file-earmark-arrow-up"></i></a>
             </button>
         </li>
         <li class="nav-item courses" role="presentation">
             <button class="nav-link" id="course5-tab" data-bs-toggle="tab" data-bs-target="#course5" type="button" role="tab" aria-controls="course5-tab" aria-selected="false">
                 Computer Systems
-                <a class='notifications' id="course5Announcement" href="#" target="myFrame"><i class="bi bi-megaphone"></i></a>
-                <a class='notifications' id='course5Grade' href="#"><i class="bi bi-clipboard-check"></i></a>
+                <a class='notifications' id="course5Announcement" href="#" target="myFrame" title="click to view new announcements"><i class="bi bi-megaphone"></i></a>
+                <a class='notifications' id='course5Grade' href="#" title="click to view new grades"><i class="bi bi-clipboard-check"></i></a>
             </button>
         </li>
         <li class="nav-item utility" role="presentation">

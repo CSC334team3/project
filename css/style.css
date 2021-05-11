@@ -24,6 +24,7 @@ section {
     width: 90%;
     margin: 0 50px;
 }
+
 #grades #left-content {
     margin-right: 50px;
     /*border-right: 1px solid black;*/
@@ -161,4 +162,24 @@ header {
 #calendar_ .other-month {
     background: #f5f5f5;
     color: #666;
+}
+
+#iconKey {
+    /*float: right;*/
+    display: flex;
+    margin-right: 40px;
+    font-size: smaller;
+    justify-content: flex-end;
+}
+
+#notificationKey {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 10px;
+}
+
+.keys {
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 0;
 }
